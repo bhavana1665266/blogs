@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="post.css">
+    <script>
+        function getSpecialChars() {
+            const textarea = document.getElementById('specialCharsTextarea');
+            const text = textarea.value;
+            document.getElementById('output').innerText = text;
+        }
+    </script>
+</head>
+<body>
+    <div id="background-image"></div>
+    <header>
+        <h1>DISCOVER BLOGS</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.php">Blogs</a></li>
+                <li><a href="#">Post</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="post.php" method="post">
+            <h2 style="color: beige;">Share Your BLOGS With US!</h2>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="name" >Domain:</label>
+                <select name="domain" id="domain" required>
+                    <option value="tech">Technology</option>
+                    <option value="health">Health</option>
+                    <option value="sports">Sports</option>
+                </select>
+                
+                <!-- <input type="radio" id="tech" name="domain" style="margin-left:10%;width: 5%;" required>Technology
+                <br>
+                <input type="radio" id="health" name="domain" style="margin-left:10%;width: 5%;" required>HealthCare <br>
+                <input type="radio" id="sports" name="domain" style="margin-left:10%;width: 5%;" required>Sports <br> -->
+            </div>
+            <div class="form-group">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="content">Blog:</label>
+                <textarea id="content" name="content" required></textarea>
+            </div>
+            <!-- <button onclick="getSpecialChars()">Get Special Characters</button> -->
+            <!-- <div class="form-group">
+                <label for="file">Attach File</label>
+                <input type="file" id="fileInput" name="file" accept=".png,.jpg,.jpeg" required>
+            </div> -->
+            <div class="form-group">
+                <button type="submit" onclick="getSpecialChars()">Submit</button>
+            </div>
+        </form>
+        <!-- <iframe src="path_to_your_attached_file.pdf" frameborder="0"></iframe>id="displayButton" -->
+        <img class="corner-image" src="post.png" alt="Corner Image">
+        <!-- <p>Your main content goes here...</p> -->
+    </main>
+</body>
+</html>

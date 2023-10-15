@@ -1,0 +1,221 @@
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+#background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('home.jpg');
+    background-size: cover;
+    background-position: center;
+    /* background-position-y: 2cm; */
+    z-index: -1; /* Position it behind other content */
+}
+
+
+/* Basic styling for the website */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+    font-size:25px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+.message-box {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+/* Style for the message content */
+.message {
+    padding: 10px;
+}
+/* .message-container {
+    display: flex;
+    justify-content: center; /* Horizontally center-align the message boxes */
+ */
+/* .message-box {
+    display: inline-block;
+    width: 30%; Adjust the width as needed
+    margin: 10px; Add spacing between message boxes
+    border: 1px solid #333;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+} */
+
+/* Styles for messages within the boxes */
+/* .message {
+    font-size: 18px;
+    font-weight: bold;
+} */
+
+/* Container for the message boxes */
+/* .message-container {
+    display: flex;
+    justify-content: space-between;
+} */
+
+/* Styles for the message boxes */
+/* .message-box {
+    width: 100px; Set the width of each box
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    margin-right: 100px; Add space between the boxes
+} */
+/* .message-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px;
+} */
+
+/* Style for the message boxes */
+/* .view ul li{
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+} */
+
+/* .blog-title-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+
+.title-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    background-color: #f0f0f0;
+} */
+
+/* .message-box {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    justify-content: center;
+    
+} */ 
+/* .message-box {
+    flex: 0 0 calc(3% - 0px); Limit to three message boxes per row with a gap */
+    /* margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+/* Style for the message content */
+/* .message {
+    padding: 10px;
+    align-items: center;
+} */
+
+/* Basic styling for the website */
+
+.button {
+    /* position: absolute; */
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1000px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+/* Container for the buttons */
+.button-container {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+}
+
+/* Styles for the buttons */
+button {
+    padding: 10px 20px; /* Adjust the padding as needed */
+    margin: 0 10px; /* Add a gap between buttons */
+    background-color: #b1a6a6;
+    color: #0d0b0b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-content {
+        max-width: 100%;
+    }
+    .button-container {
+        flex-direction: column; /* Stack buttons on smaller screens */
+        align-items: center; /* Center the buttons vertically */
+    }
+    .message-box {
+        display: block; /* Stack message boxes on smaller screens */
+    }
+    /* .message-box {
+        flex: 0 0 calc(3% - 0px); Limit to two message boxes per row on smaller screens
+    } */
+}

@@ -1,0 +1,138 @@
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+#background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('home.png');
+    background-size: cover;
+    background-position: center;
+    /* background-position-y: 2cm; */
+    z-index: -1; /* Position it behind other content */
+}
+
+
+/* Basic styling for the website */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+    font-size:25px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+main {
+    padding: 20px 50px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+table{
+    width: 80%; /* Adjust the width as needed */
+    max-width: 800px; /* Set a maximum width if necessary */
+    border-collapse: collapse;
+}
+th, td {
+    /* border: 0px solid #ddd; */
+    font-size: 30px;
+    padding: 30px;
+    text-align: left;
+    align-items: center;
+}
+/* th {
+    background-color: #f2f2f2;
+} */
+
+/* .main-content {
+    text-align: right;
+}
+
+.text-content {
+    max-width: 100%;
+} */
+
+h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    margin-top: 10%;
+    color: azure;
+}
+
+/* h2 {
+    font-size: 50px;
+    line-height: 1.5;
+} */
+
+/* p {
+    line-height: 1;
+} */
+
+/* .button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+} */
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-content {
+        max-width: 100%;
+    }
+}
